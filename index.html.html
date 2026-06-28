@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bar e Restaurante da Quequel - Vencedora Panela de Bairro</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Montserrat', sans-serif; color: #333; line-height: 1.6; background-color: #fff; }
+        .container { width: 90%; max-width: 1100px; margin: 0 auto; }
+        .section { padding: 4rem 0; }
+        .bg-light { background-color: #fcf8f2; }
+        .text-center { text-align: center; }
+
+        .hero {
+            background: linear-gradient(135deg, rgba(211, 84, 0, 0.9), rgba(192, 57, 43, 0.9)), 
+                        url('IMG_9346_1782673098651.jpeg'); /* Foto da Quequel com os clientes */
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 8rem 0;
+            text-align: center;
+        }
+        .hero h1 { font-family: 'Playfair Display', serif; font-size: 3rem; margin: 15px 0; font-weight: 700; text-shadow: 2px 2px 4px rgba(0,0,0,0.4); }
+        .hero .location { font-size: 1.2rem; margin-bottom: 2rem; font-weight: bold; }
+        .badge { background-color: #f1c40f; color: #2c3e50; padding: 6px 16px; border-radius: 50px; font-weight: bold; font-size: 0.9rem; text-transform: uppercase; }
+        
+        .btn-main { background-color: #ffffff; color: #c0392b; padding: 12px 28px; text-decoration: none; font-weight: bold; border-radius: 5px; box-shadow: 0 4px 10px rgba(0,0,0,0.15); transition: all 0.3s ease; display: inline-block; }
+        .btn-main:hover { background-color: #f1c40f; color: #2c3e50; }
+
+        .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; }
+        .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; }
+        @media (max-width: 768px) { .grid-2 { grid-template-columns: 1fr; } .hero h1 { font-size: 2.2rem; } }
+
+        .sobre-texto h2 { font-family: 'Playfair Display', serif; font-size: 2.2rem; color: #2c3e50; margin-bottom: 20px; }
+        blockquote { border-left: 4px solid #e67e22; padding-left: 15px; margin: 20px 0; font-style: italic; color: #d35400; font-size: 1.1rem; }
+
+        .card-premio { background-color: #27ae60; color: white; padding: 2.5rem; border-radius: 10px; }
+        .card-premio h3 { margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.2); padding-bottom: 5px; }
+        .card-premio ul { list-style: none; }
+        .card-premio ul li { margin-bottom: 12px; padding-left: 20px; position: relative; }
+        .card-premio ul li::before { content: "✓"; position: absolute; left: 0; color: #f1c40f; font-weight: bold; }
+
+        .galeria-card { background: white; padding: 15px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); text-align: center; }
+        .galeria-card img { width: 100%; height: 320px; object-fit: cover; border-radius: 6px; margin-bottom: 15px; display: block; }
+
+        footer { background-color: #2c3e50; color: #bdc3c7; padding: 3rem 0; text-align: center; }
+        .instagram-btn { background-color: #e1306c; color: white; padding: 10px 20px; text-decoration: none; font-weight: bold; border-radius: 5px; display: inline-block; margin-top: 10px; }
+    </style>
+</head>
+<body>
+
+    <header class="hero">
+        <div class="container">
+            <span class="badge">🏆 Vencedora do Panela de Bairro de Verão</span>
+            <h1>Bar e Restaurante da Quequel</h1>
+            <p class="location">📍 Misericórdia - Itaparica, Bahia</p>
+            <a href="#sobre" class="btn-main">Conheça Nossa História</a>
+        </div>
+    </header>
+
+    <section id="sobre" class="container section">
+        <div class="grid-2">
+            <div class="sobre-texto">
+                <h2>A Melhor Culinária de Itaparica</h2>
+                <p>O <strong>Bar e Restaurante da Quequel</strong> traz o melhor sabor da tradição baiana diretamente de Misericórdia, na Ilha de Itaparica. Comandado com muito amor e tempero pela nossa querida Quequel, o restaurante ganhou destaque regional e o coração do público.</p>
+                <blockquote>
+                    "Ganhadora oficial do prêmio <strong>Panela de Bairro de Verão</strong> da TV Bahia / Rede Globo!"
+                </blockquote>
+                <p>Aqui, cada prato conta uma história de dedicação, frescor e raízes nordestinas. Venha saborear o tempero campeão!</p>
+            </div>
+            <div class="sobre-destaque">
+                <div class="card-premio">
+                    <h3>🎖️ Destaques</h3>
+                    <ul>
+                        <li>Sabor Autêntico da Bahia</li>
+                        <li>Ingredientes Selecionados e Frescos</li>
+                        <li>Atendimento Familiar e Acolhedor</li>
+                        <li>Reconhecimento na TV Aberta</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-light section">
+        <div class="container">
+            <h2 class="text-center" style="margin-bottom: 2rem; font-family: 'Playfair Display', serif;">Momentos Marcantes</h2>
+            <div class="grid-3">
+                
+                <div class="galeria-card">
+                    <img src="IMG_9347_1782673098651.jpeg" alt="Vencedora Oficial">
+                    <h4>Sabor Campeão</h4>
+                    <p>O quadro que consagra a Quequel como a grande vencedora do Panela de Bairro de Verão.</p>
+                </div>
+
+                <div class="galeria-card">
+                    <img src="IMG_9349_1782673098649.jpeg" alt="Quequel na TV">
+                    <h4>Quequel na TV</h4>
+                    <p>Bastidores das gravações e a simpatia da nossa cozinheira para as telas da TV Bahia.</p>
+                </div>
+
+                <div class="galeria-card">
+                    <img src="IMG_9348_1782673098651.jpeg" alt="Troféu Panela de Bairro">
+                    <h4>Tradição e Sabor</h4>
+                    <p>O legítimo e merecido troféu ao lado do melhor acompanhamento da ilha.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Bar e Restaurante da Quequel. Todos os direitos reservados.</p>
+            <a href="https://www.instagram.com/cozinheiraquequel" target="_blank" class="instagram-btn">
+                📸 Siga no Instagram @cozinheiraquequel
+            </a>
+        </div>
+    </footer>
+
+</body>
+</html>
